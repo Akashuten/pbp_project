@@ -1,1 +1,2 @@
 # pbp_project
+TOKONESA adalah website jual beli untuk mahasiswa Universitas Negeri Surabaya, khususnya mahasiswa Kampus Kertintang dan Lidah Wetan. Tujuan TOKONESA adalah membantu mahasiswa UNESA menjual barang-barang yang sudah tidak mereka gunakan tetapi masih dibutuhkan mahasiswa UNESA lain. Selain itu, karena TOKONESA hanya mencakup area Universitas Negeri Surabaya, pengiriman bisa dilakukan dengan lebih aman dan lebih cepat.
