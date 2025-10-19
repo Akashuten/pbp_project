@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOKONESA - Marketplace Online Universitas Negeri Surabaya</title>
+    <!-- Pakai CDN supaya tidak perlu copy paste bootstrap dan sejenisnya-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#home">
+                <i class="fas fa-store-alt"></i> TOKONESA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-none" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-none" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-none" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-white" href="#" id="cart-link">
+                    <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container Halaman Utama-->
+    <div id="main-content">
+        
+        <!-- HOME -->
+        <div id="home" class="page-content active">
+            <!-- Hero Section -->
+            <div id="hero-section" class="container mt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-section bg-primary text-white rounded p-5 mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h1 class="display-4 fw-bold">Selamat Datang di TOKONESA</h1>
+                                    <p class="lead">Temukan Kebutuhanmu, Dukung Rekanmu. Marketplace kolaboratif mahasiswa UNESA.</p>
+                                    <a href="#product" class="btn btn-outline-light btn-lg ms-2">
+                                        <i class="fas fa-shopping-bag"></i> Mulai Belanja
+                                    </a>
+                                    <a href="#contact" class="btn btn-outline-light btn-lg ms-2">
+                                        <i class="fas fa-phone"></i> Hubungi Kami
+                                    </a>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <i class="fas fa-store-alt fa-5x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk Unggulan -->
+            <div id="featured-products-section" class="container mt-4">
+                <h2 class="text-center mb-4">Produk Unggulan</h2>
+                <div class="row" id="featured-products">
+                    <!-- Produk unggulan akan muncul di sini (produk dengan id terkecil) -->
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#product" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-eye"></i> Lihat Semua Produk
+                    </a>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div id="features-section" class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="feature-card p-4">
+                            <i class="fas fa-shipping-fast fa-3x text-primary mb-3"></i>
+                            <h4>Pengiriman Cepat</h4>
+                            <p class="text-muted">Pengiriman cepat ke daerah Lidah Wetan & Ketintang dengan jaminan keamanan</p>
+                            <a href="#product" class="btn btn-outline-primary btn-sm mt-2">
+                                <i class="fas fa-shopping-cart"></i> Belanja Sekarang
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="feature-card p-4">
+                            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                            <h4>Garansi Produk</h4>
+                            <p class="text-muted">Semua produk dilengkapi dengan garansi apabila ada kerusakan saat pengiriman</p>
+                            <a href="#contact" class="btn btn-outline-primary btn-sm mt-2">
+                                <i class="fas fa-question-circle"></i> Tanya Garansi
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="feature-card p-4">
+                            <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                            <h4>Customer Service</h4>
+                            <p class="text-muted">Tim customer service siap membantu Anda jika terdapat masalah dengan transaksi</p>
+                            <a href="#contact" class="btn btn-outline-primary btn-sm mt-2">
+                                <i class="fas fa-headset"></i> Hubungi CS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT -->
+        <div id="product" class="page-content">
+            <!-- Page Header -->
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-5 fw-bold text-center mb-4">Katalog Produk</h1>
+                        <p class="text-center text-muted mb-4">Temukan produk terjangkau yang sesuai dengan keinginan atau kebutuhan Anda</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search dan Filter -->
+            <div id="search-section" class="container mt-3">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="search-input" placeholder="Cari produk...">
+                            <button class="btn btn-outline-secondary" type="button" id="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" id="category-filter">
+                            <option value="">Semua Kategori</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="electronics">Elektronik</option>
+                            <option value="foods">Makanan</option>
+                            <option value="sports">Olahraga</option>
+                            <option value="others">Lainnya</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Produk -->
+            <div id="products-grid" class="container mt-4">
+                <div class="row" id="products-container">
+                    <!-- Produk akan muncul di sini -->
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="page-content">
+            <!-- Page Header -->
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-5 fw-bold text-center mb-4">Hubungi Kami</h1>
+                        <p class="text-center text-muted mb-4">Kami siap membantu Anda jika ada pertanyaan atau kebutuhan khusus</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div id="contact-info" class="container mt-4">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card text-center p-4 h-100">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                            <h4>Alamat</h4>
+                            <p class="text-muted">
+                                Gedung A10, Jl. Ketintang Wiyata<br>
+                                Surabaya, Jawa Timur 60231<br>
+                                Indonesia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card text-center p-4 h-100">
+                            <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                            <h4>Telepon</h4>
+                            <p class="text-muted">
+                                +62 67 6869 7071<br>
+                                +62 69 6867 6665<br>
+                                Senin - Jumat: 08:00 - 17:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card text-center p-4 h-100">
+                            <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                            <h4>Email</h4>
+                            <p class="text-muted">
+                                info@tokonesa.com<br>
+                                support@tokonesa.com<br>
+                                kurir@tokonesa.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <h4 class="mb-0"><i class="fas fa-paper-plane"></i> Kirim Pesan</h4>
+                            </div>
+                            <div class="card-body">
+                                <form id="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">Nama Depan</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Nama Belakang</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Nomor Telepon</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subjek</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="">Pilih Subjek</option>
+                                            <option value="general">Pertanyaan Umum</option>
+                                            <option value="product">Informasi Produk</option>
+                                            <option value="order">Status Pesanan</option>
+                                            <option value="complaint">Keluhan</option>
+                                            <option value="suggestion">Saran</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Pesan</label>
+                                        <textarea class="form-control" id="message" rows="5" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Bagaimana cara memesan produk?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Anda dapat memesan produk dengan mudah melalui website kami. Pilih produk yang diinginkan, tentukan opsi (ukuran, warna, dll), masukkan ke keranjang, dan lakukan checkout.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Berapa lama waktu pengiriman?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Waktu pengiriman bervariasi tergantung lokasi tujuan. Untuk Ketintang dan sekitarnya: sekitar 1 jam kerja. Untuk Lidah Wetan: 1-2 jam kerja. Kami akan memberikan estimasi waktu pengiriman saat checkout.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Apakah produk memiliki garansi?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Kami memberi garansi  jika terjadi kerusakan saat pengiriman. Untuk garansi kecacatan barang tergantung dari kebijakan penjual. Garansi dapat dilihat pada halaman detail produk.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Bagaimana cara melakukan pengembalian produk?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Produk dapat dikembalikan setelah diterima dengan kondisi masih baru dan dalam kemasan asli. Hubungi customer service kami untuk proses pengembalian.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3 class="mb-4">Ikuti Kami di Media Sosial</h3>
+                        <div class="social-links">
+                            <a href="#" class="btn btn-outline-primary me-3 mb-2">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                            <a href="#" class="btn btn-outline-info me-3 mb-2">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                            <a href="#" class="btn btn-outline-danger me-3 mb-2">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="#" class="btn btn-outline-success me-3 mb-2">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal Produk -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalTitle">Detail Produk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="productModalImage" src="" class="img-fluid rounded" alt="Product Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="productModalName"></h4>
+                            <p class="text-muted" id="productModalCategory"></p>
+                            <h5 class="text-primary" id="productModalPrice"></h5>
+                            <p id="productModalDescription"></p>
+                            
+                            <!-- Opsi Produk -->
+                            <div id="productOptions">
+                                <!-- Opsi akan muncul di sini -->
+                            </div>
+                            
+                            <!-- Jumlah Barang yang Dibeli -->
+                            <div class="mb-3">
+                                <label class="form-label">Jumlah:</label>
+                                <div class="input-group" style="width: 150px;">
+                                    <button class="btn btn-outline-secondary" type="button" id="qty-minus">-</button>
+                                    <input type="number" class="form-control text-center" id="quantity" value="1" min="1">
+                                    <button class="btn btn-outline-secondary" type="button" id="qty-plus">+</button>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-primary btn-lg w-100" id="addToCartBtn">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Keranjang -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Keranjang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items">
+                        <!-- Produk yang ada di keranjang akan muncul di sini -->
+                    </div>
+                    <div class="border-top pt-3">
+                        <div class="d-flex justify-content-between">
+                            <h5>Total:</h5>
+                            <h5 class="text-primary" id="cart-total">Rp 0</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-success" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 TOKONESA. Dibuat oleh Akashuten.</p>
+        </div>
+    </footer>
+
+    <!-- CDN bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
